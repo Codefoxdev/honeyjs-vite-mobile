@@ -1,0 +1,37 @@
+{
+  "name": "@honeyjs/vite-mobile",
+  "version": "0.1.0",
+  "description": "A vite plugin to speed up the development of mobile apps",
+  "author": "Codefoxdev",
+  "license": "MIT",
+  "keywords": [
+    "vite-plugin",
+    "mobile",
+    "development"
+  ],
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeFoxDev/honeyjs-vite-mobile.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codefoxdev/honeyjs-vite-mobile/issues"
+  },
+  "homepage": "https://github.com/codefoxdev/honeyjs-vite-mobile#readme",
+  "types": "./src/types/index.d.ts",
+  "main": "./src/index.js",
+  "exports": {
+    ".": {
+      "default": "./src/index.js",
+      "types": "./src/types/index.d.ts"
+    },
+    "./client": {
+      "default": "./src/client.js"
+    }
+  },
+  "devDependencies": {
+    "@honeyjs/vite-loader": "^0.2.2",
+    "@honeyjs/core": "../core",
+    "vite": "^4.5.0"
+  }
+}
